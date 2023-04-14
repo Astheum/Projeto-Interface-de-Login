@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+    outline: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(bg1.svg);
+    background-color: #141414;
+    background-size: cover;
+    background-position: center;
+}
+
+div.container{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+div.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+}
+
+button#btnShowLogin{
+    color: white;
+    background-color: rgba(0, 0, 88, 0.800);
+    padding: 10px;
+    border-radius: 50px 0px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+button#btnShowLogin:hover{
+    font-weight: bold;
+    background-color: rgba(0, 0, 88, 0.950);
+}
+
+button#btnShowLogin:active{
+    background-color: #141414;
+}
+
+button#btnShowRegister{
+    color: white;
+    background-color: rgba(0, 0, 88, 0.800);
+    padding: 10px;
+    border-radius: 0px 50px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+button#btnShowRegister:hover{
+    font-weight: bold;
+    background-color: rgba(0, 0, 88, 0.950);
+}
+
+button#btnShowRegister:active{
+    background-color: #141414;
+}
+
+label#emailID{
+    color: white;
+    margin-left: -280px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+label#passID{
+    color: white;
+    margin-left: -280px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+label#passIDConf{
+    color: white;
+    margin-left: -160px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+div#login{
+    display: grid;
+    margin: 0 auto;
+    width: 500px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius:  0px 0px 50px 50px;
+    border: 0.5px solid rgba(255, 255, 255, 0.7)
+}
+
+div#register{
+    display: none;
+    width: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius:  0px 0px 50px 50px;
+    border: 0.5px solid rgba(255, 255, 255, 0.7)
+}
+
+section.login{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+section.register{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+input#emailID{
+    padding: 12px;
+    height: 45px;
+    width: 190%;
+    border-radius: 15px;
+    border: solid black 1px;
+}
+
+input#passID{
+    padding: 12px;
+    height: 45px;
+    width: 190%;
+    border-radius: 15px;
+    border: solid black 1px;
+}
+
+button.submit{
+    background-color: #c2c9ee;
+    border: 1px black solid;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    width: 55%;
+}
+
+button.submit:hover{
+    background-color: #667ae8;
+}
+
+button.submit:active{
+    color: white;
+    background-color: #32429E;
+}
