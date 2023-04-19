@@ -118,7 +118,7 @@
     /* Laptop Querie */
     @media (min-width: 992px) {
       .container {
-        width: 40vw;
+        width: 35vw;
       }
 
       .btns {
