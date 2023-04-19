@@ -5,43 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="script.js"></script>
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <div class="btns">
-            <button onclick="login()" id="btnShowLogin">ENTRAR</button>
-            <button onclick="register()" id="btnShowRegister">REGISTRAR</button>
+    <main>
+        <div class="container">
+            <div class="btns">
+                <button onclick="login()" id="btnShowLogin">ENTRAR</button>
+                <button onclick="register()" id="btnShowRegister">REGISTRAR</button>
+            </div>
+            <div id="login">
+                <section class="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" name="email" id="login-email">
+                    <label for="login-password">Password:</label>
+                    <input type="password" name="password" id="login-password">
+                    <button class="submit-button">Login</button>
+                </section>
+            </div>
+            <div id="register">
+                <section class="register-form">
+                    <label for="register-email">Email:</label>
+                    <input type="email" name="email" id="register-email">
+                    <label for="register-password">Password:</label>
+                    <input type="password" name="password" id="register-password">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                    <button class="submit-button">Register</button>
+                </section>
+            </div>
         </div>
-        <div id="login">
-            <section class="login">
-                <br>
-                <label for="emailID" id="emailID">Email</label>
-                <input type="email" name="email" id="emailID">
-                <br>
-                <label for="passID" id="passID">Senha</label>
-                <input type="password" name="pass" id=passID>
-                <br>
-                <button class="submit">Entrar</button>
-            </section>   
-        </div>
-        
-        <div id="register">
-            <section class="register">
-                <br>
-                <label for="emailID" id="emailID">Email</label>
-                <input type="email" name="email" id="emailID">
-                <br>
-                <label for="passID" id="passID">Senha</label>
-                <input type="password" name="pass" id=passID>
-                <br>
-                <label for="passID" id="passIDConf">Confirmação de senha</label>
-                <input type="password" name="pass" id=passID>
-                <br>
-                <button class="submit">Registar</button>
-            </section>
-        </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Astheum.dev</p>
+    </footer>
 </body>
 </html>
