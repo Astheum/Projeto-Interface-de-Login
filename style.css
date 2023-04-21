@@ -106,6 +106,10 @@
 
     /* Tablet Querie */
     @media (min-width: 768px) {
+      .container {
+        width: 55vw;
+      }
+
       .btns {
         display: flex;
         justify-content: center;
@@ -118,7 +122,7 @@
     /* Laptop Querie */
     @media (min-width: 992px) {
       .container {
-        width: 35vw;
+        width: 45vw;
       }
 
       .btns {
@@ -127,9 +131,9 @@
     }
 
     /* Desktop Querie */
-    @media (min-width: 1200) {
+    @media (min-width: 1200px) {
       .container {
-        width: 20vw;
+        width: 35vw;
       }
 
       .btns {
