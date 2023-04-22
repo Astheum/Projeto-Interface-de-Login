@@ -1,3 +1,14 @@
+@charset "utf-8";
+
+/* Root */
+:root{
+  /* Colors */
+  --white: #fff;
+  --body-bg-color: #06083c;
+  --container-bg-color: #5c5959;
+  --buttons: #007bff;
+  --buttons-hover: #0062cc;
+}
 /* Reset styles */
 * {
     box-sizing: border-box;
@@ -9,8 +20,8 @@
   body {
     background: url(bg1.svg) center no-repeat;
     background-size: cover;
-    background-color: hsl(238, 82%, 13%);
-    color: #ffffff;
+    background-color: var(--body-bg-color);
+    color: var(--white);
 
     display: grid;
     align-content: center;
@@ -28,7 +39,7 @@
   }
 
   .container {
-    background-color: #5c5959;
+    background-color: var(--container-bg-color);
 
     width: 80vw;
     padding: 20px;
@@ -44,8 +55,8 @@
   }
   
   .btns button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--buttons);
+    color: var(--white);
 
     border: none;
     padding: 10px 20px;
@@ -56,7 +67,7 @@
   }
   
   .btns button:hover {
-    background-color: #0062cc;
+    background-color: var(--buttons-hover);
   }
   
   #login{
@@ -88,8 +99,8 @@
   
   .login-form button,
   .register-form button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--buttons);
+    color: var(--white);
 
     border: none;
     padding: 10px 20px;
@@ -101,7 +112,7 @@
   
   .login-form button:hover,
   .register-form button:hover {
-    background-color: #0062cc;
+    background-color: var(--buttons-hover);
   }
 
     /* Tablet Querie */
